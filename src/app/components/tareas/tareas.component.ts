@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { TareaService, Tarea } from '../../services/tarea.service';
-
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-tareas',
   standalone: true,
-  imports: [],
+  imports: [RouterOutlet],
   templateUrl: './tareas.component.html',
   styleUrl: './tareas.component.css'
 })
