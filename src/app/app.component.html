@@ -178,11 +178,11 @@
         <span><p>Agregar nueva tarea</p></span>
       </div>
     </div>
-    <div class="column">
+    <div class="column" *ngIf="tareas.length === 0">
       <div><p>Ahora no hay nada en tu lista (｡•́︿•̀｡)</p></div>
       <div><img class="void" src="./assets/cat04.webp" alt=""></div>
     </div>
-    <app-tareas>La tarea no funciona</app-tareas>
+    <app-tareas></app-tareas>
   </section>
 </main>
 

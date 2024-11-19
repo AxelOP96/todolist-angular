@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { TareaService, Tarea } from '../../services/tarea.service';
+import { TareaService} from '../../services/tarea.service';
 import { RouterOutlet } from '@angular/router';
-
+import { Tarea } from '../../models/tarea.model';
+import { FormsModule } from '@angular/forms'; // Para NgModel
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-tareas',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, FormsModule, CommonModule],
   templateUrl: './tareas.component.html',
   styleUrl: './tareas.component.css'
 })

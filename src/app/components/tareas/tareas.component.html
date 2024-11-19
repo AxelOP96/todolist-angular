@@ -1,1 +1,23 @@
 <p>tareas works!</p>
+<div>
+    <h1>Lista de Tareas</h1>
+    <form (submit)="agregarTarea()">
+      <input [(ngModel)]="nuevaTarea.titulo" placeholder="Título" required />
+      <input [(ngModel)]="nuevaTarea.descripcion" placeholder="Descripción" required />
+      <select [(ngModel)]="nuevaTarea.prioridad">
+        <option value="Alta">Alta</option>
+        <option value="Media">Media</option>
+        <option value="Baja">Baja</option>
+      </select>
+      <button type="submit">Agregar Tarea</button>
+    </form>
+  
+    <ul>
+      <li *ngFor="let tarea of tareas">
+        <h3>{{ tarea.titulo }} ({{ tarea.prioridad }})</h3>
+        <p>{{ tarea.descripcion }}</p>
+        <button *ngIf="tarea._id" (click)="eliminarTarea(tarea._id)">Eliminar</button>
+      </li>
+    </ul>
+  </div>
+  
