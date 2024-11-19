@@ -2,14 +2,15 @@
 <div>
     <h1>Lista de Tareas</h1>
     <form (submit)="agregarTarea()">
-      <input [(ngModel)]="nuevaTarea.titulo" placeholder="Título" required />
-      <input [(ngModel)]="nuevaTarea.descripcion" placeholder="Descripción" required />
-      <select [(ngModel)]="nuevaTarea.prioridad">
+      <input class="rellenar" [(ngModel)]="nuevaTarea.titulo" placeholder="Título" required />
+      <input class="rellenar" [(ngModel)]="nuevaTarea.descripcion" placeholder="Descripción" required />
+      <label for="prioridad"></label>
+      <select id="prioridad" class="rellenar" [(ngModel)]="nuevaTarea.prioridad" placeholder="Prioridad">
         <option value="Alta">Alta</option>
         <option value="Media">Media</option>
         <option value="Baja">Baja</option>
       </select>
-      <button type="submit">Agregar Tarea</button>
+      <button class="add" type="submit">Agregar Tarea</button>
     </form>
   
     <ul>

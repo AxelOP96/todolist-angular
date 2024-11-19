@@ -1,0 +1,21 @@
+.rellenar{
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    margin: 2px 5px;
+}
+.add{
+    background-color: rgb(54, 139, 54);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+    border: none;
+    margin: 2px 10px;
+}
+.add:hover{
+    background-color: rgb(159, 239, 159);
+    color: #000;
+    transform: scale(1.2);
+}
