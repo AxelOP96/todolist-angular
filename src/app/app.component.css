@@ -49,3 +49,17 @@ p{
     height: 300px;
     width: 300px;
 }
+.add{
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-add{
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
