@@ -17,15 +17,17 @@
   </div>
   <div class="cards">
     <div class="card">
+      <h3>Tareas</h3>
       <ul>
         <li *ngFor="let tarea of tareas">
           <h3>{{ tarea.titulo }}, Prioridad: ({{ tarea.prioridad }})</h3>
           <p>{{ tarea.descripcion }}</p>
           <button class="delete" *ngIf="tarea._id" (click)="eliminarTarea(tarea._id)">Eliminar</button>
+          <button class="complete">Completar</button>
         </li>
       </ul>
     </div>
     <div class="card">
-
+      <h3>Completadas</h3>
     </div>
   </div>
