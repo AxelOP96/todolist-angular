@@ -1,11 +1,11 @@
 <div class="form-add">
-    <h1></h1>
+    
     <form (submit)="agregarTarea()">
       <legend>Lista de Tareas</legend>
-      <input class="rellenar" [(ngModel)]="nuevaTarea.titulo" placeholder="Título" required />
-      <input class="rellenar" [(ngModel)]="nuevaTarea.descripcion" placeholder="Descripción" required />
+      <input class="rellenar" [(ngModel)]="nuevaTarea.titulo" name="titulo" placeholder="Título" required />
+      <input class="rellenar" [(ngModel)]="nuevaTarea.descripcion" name="descripcion" placeholder="Descripción" required />
       <label for="prioridad"></label>
-      <select id="prioridad" class="rellenar" [(ngModel)]="nuevaTarea.prioridad" placeholder="Prioridad">
+      <select id="prioridad" class="rellenar" name="prioridad" [(ngModel)]="nuevaTarea.prioridad">
         <option value="Alta">Alta</option>
         <option value="Media">Media</option>
         <option value="Baja">Baja</option>
@@ -13,12 +13,19 @@
       <button class="add" type="submit">Agregar Tarea</button>
     </form>
   
-    <ul>
-      <li *ngFor="let tarea of tareas">
-        <h3>{{ tarea.titulo }} ({{ tarea.prioridad }})</h3>
-        <p>{{ tarea.descripcion }}</p>
-        <button *ngIf="tarea._id" (click)="eliminarTarea(tarea._id)">Eliminar</button>
-      </li>
-    </ul>
+    
   </div>
-  
+  <div class="cards">
+    <div class="card">
+      <ul>
+        <li *ngFor="let tarea of tareas">
+          <h3>{{ tarea.titulo }}, Prioridad: ({{ tarea.prioridad }})</h3>
+          <p>{{ tarea.descripcion }}</p>
+          <button class="delete" *ngIf="tarea._id" (click)="eliminarTarea(tarea._id)">Eliminar</button>
+        </li>
+      </ul>
+    </div>
+    <div class="card">
+
+    </div>
+  </div>

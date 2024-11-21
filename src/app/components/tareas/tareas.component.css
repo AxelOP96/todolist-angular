@@ -30,3 +30,11 @@
     background-color: rgb(89, 179, 89);
     border-radius: 10px;
 }
+.delete{
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+}
