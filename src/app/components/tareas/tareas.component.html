@@ -1,6 +1,7 @@
 <div class="form-add">
-    <h1>Lista de Tareas</h1>
+    <h1></h1>
     <form (submit)="agregarTarea()">
+      <legend>Lista de Tareas</legend>
       <input class="rellenar" [(ngModel)]="nuevaTarea.titulo" placeholder="Título" required />
       <input class="rellenar" [(ngModel)]="nuevaTarea.descripcion" placeholder="Descripción" required />
       <label for="prioridad"></label>

@@ -25,4 +25,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid green;
+    width: 50%;
+    background-color: rgb(89, 179, 89);
+    border-radius: 10px;
 }

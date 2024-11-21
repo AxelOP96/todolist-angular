@@ -18,7 +18,7 @@ nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
+    height: inherit;
 }
 .column div{
     margin: 20px 0;
@@ -55,11 +55,5 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.form-add{
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 10px;
 }
